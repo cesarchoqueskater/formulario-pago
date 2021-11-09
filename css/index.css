@@ -14,17 +14,103 @@ body {
     color: var(--white);
     background-color: var(--background);
     font: var(--heading1);
+    margin: 0;
+    padding: 0;
 }
 
 .content {}
 
 .wrapper {
     display: block;
-    margin: 0 auto;
+    margin: 101px auto;
     max-inline-size: 360px;
 }
 
+.border-radius-circle {
+    display: block;
+    margin: auto;
+    background-color: var(--background);
+    border-radius: 50%;
+    block-size: 48px;
+    inline-size: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.border-radius-circle img {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.title-form-price {
+    text-align: center;
+}
+
 .form-price {
+    font: var(--text1regular);
     background-color: var(--white);
     color: var(--black);
+    border-radius: 20px;
+    padding-block: 30px;
+    padding-inline: 30px;
+}
+
+.information-credit-card {
+    font: var(--background);
+}
+
+.data-credit {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.data-credit input {
+    inline-size: 144px;
+}
+
+input {
+    margin: 0;
+    block-size: 40px;
+    inline-size: 300px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+    margin-block-start: 10px;
+    padding-inline-start: 12px;
+}
+
+label {
+    margin: 0;
+}
+
+.input-text {
+    margin-block-end: 24px;
+}
+
+.btn-pay {
+    block-size: 40px;
+    inline-size: 300px;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.context {
+    text-align: center;
+    margin-block-start: 8px;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    font: var(--text2regular);
 }
