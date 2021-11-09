@@ -1,0 +1,30 @@
+:root {
+    --black: #030102;
+    --grey: #9ea8bd;
+    --grey2: #e2e6ee;
+    --primary: #ca097a;
+    --white: #ffffff;
+    --background: #08003B;
+    --text1regular: 400 1rem/normal Roboto;
+    --heading1: 700 1.25rem/normal Roboto;
+    --text2regular: 300 0.75rem/normal Roboto;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--background);
+    font: var(--heading1);
+}
+
+.content {}
+
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    max-inline-size: 360px;
+}
+
+.form-price {
+    background-color: var(--white);
+    color: var(--black);
+}
