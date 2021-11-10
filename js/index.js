@@ -8,14 +8,13 @@ const $inputSelected = document.querySelectorAll('input')
 
 
 showInputInformation()
-validateLargeValue()
+validateNumberCVV()
+validateDateExpired()
 validateNumberCreditCard()
 
 
 export function showInputInformation() {
-
     $ariaSelected.addEventListener('click', function() {
-        console.log("Se hizo click !!!")
         removeDisabledInput()
         removeDisabledButton()
     })
@@ -23,19 +22,28 @@ export function showInputInformation() {
 
 export function validateNumberCreditCard() {
     $creditCard.addEventListener('input', function(e) {
-        e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim()
     });
 }
 
-export function validateLargeValue() {
-    $dateExpired.addEventListener('keyup', function(e) {
+export function validateDateExpired() {
+    $dateExpired.addEventListener('input', function(e) {
         if (e.target.value.length == 2) {
-            e.target.value = e.target.value + "/"
+            // e.target.value = aa.match(e.target.value).join('/')
+            e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{2})/g, '$1/')
             return true
         }
     })
 }
 
+export function validateNumberCVV() {
+    $cvv.addEventListener('input', function(e) {
+        e.target.value = e.target.value.replace(/[^\dA-Z]/g, '')
+    });
+}
+
+
+// Remove disabled input and button
 export function removeDisabledInput() {
     $inputSelected.forEach((item) => {
         item.removeAttribute('disabled')
