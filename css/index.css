@@ -18,12 +18,16 @@ body {
     padding: 0;
 }
 
-.content {}
+.content {
+    height: 100vh;
+}
 
 .wrapper {
-    display: block;
-    margin: 101px auto;
+    display: grid;
+    align-items: center;
     max-inline-size: 360px;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .border-radius-circle {

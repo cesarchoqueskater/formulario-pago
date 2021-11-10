@@ -18,12 +18,12 @@ Estilo libre. Lleva el diseño al código utilizando tu framework favorito, o co
 
 ## Desktop
 
-<img width="400px"  src="https://raw.githubusercontent.com/uxcristopher/imagenes/main/Readmes/Formulario%20de%20pago/Desktop.jpg" />
+<img width="500px"  src="./screenshots/Desktop.png" />
 
 
 ## Mobile
 
-<img width="400px" src="https://raw.githubusercontent.com/uxcristopher/imagenes/main/Readmes/Formulario%20de%20pago/Mobile.jpg" />
+<img width="300px" src="./screenshots/Mobile.png" />
 
 ## Disclaimer
 
