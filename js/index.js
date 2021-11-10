@@ -11,6 +11,7 @@ showInputInformation()
 validateNumberCVV()
 validateDateExpired()
 validateNumberCreditCard()
+clickButtonPay()
 
 
 export function showInputInformation() {
@@ -52,4 +53,19 @@ export function removeDisabledInput() {
 
 export function removeDisabledButton() {
     $btnPay.removeAttribute('disabled')
+}
+
+//  Limpiar value input
+export function cleanInput() {
+    $inputSelected.forEach((item) => {
+        item.value = ''
+    })
+}
+
+// Confirmar pago
+export function clickButtonPay() {
+    $btnPay.addEventListener('click', function(e) {
+        e.preventDefault()
+        cleanInput()
+    })
 }

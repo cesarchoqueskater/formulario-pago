@@ -38,31 +38,33 @@
                 </div>
                 <h2 class="title-form-price">Información de Pago</h2>
                 <div class="information-credit-card">
-                    <div class="input-text">
-                        <label for="name">Nombre Completo</label>
-                        <input type="text" id="name" placeholder="César Choquehuanca" required>
-                    </div>
-                    <div class="aria-selected" aria-disabled="true">
+                    <form method="" action>
                         <div class="input-text">
-                            <label for="number-credit-card">Número de Tarjeta de Crédito</label>
-                            <input type="text" id="number-credit-card" maxlength="19" placeholder="1234 1234 1234 1234" required disabled>
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" placeholder="César Choquehuanca" required>
                         </div>
-                        <div class="data-credit">
+                        <div class="aria-selected" aria-disabled="true">
                             <div class="input-text">
-                                <label for="date-expired">Fecha vencimiento</label>
-                                <input type="text" id="date-expired" maxlength="5" placeholder="MM/YY" required disabled>
+                                <label for="number-credit-card">Número de Tarjeta de Crédito</label>
+                                <input type="text" id="number-credit-card" maxlength="19" placeholder="1234 1234 1234 1234" required disabled>
+                            </div>
+                            <div class="data-credit">
+                                <div class="input-text">
+                                    <label for="date-expired">Fecha vencimiento</label>
+                                    <input type="text" id="date-expired" maxlength="5" placeholder="MM/YY" required disabled>
+                                </div>
+                                <div class="input-text">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" maxlength="3" placeholder="..." required disabled>
+                                </div>
                             </div>
                             <div class="input-text">
-                                <label for="cvv">CVV</label>
-                                <input type="text" id="cvv" maxlength="3" placeholder="..." required disabled>
+                                <label for="direction">Dirección</label>
+                                <input type="text" id="direction" placeholder="Av. C Choquehuanca #1234" required disabled>
                             </div>
+                            <button class="btn-pay" type="submit" disabled>Confirmar pago</button>
                         </div>
-                        <div class="input-text">
-                            <label for="direction">Dirección</label>
-                            <input type="text" id="direction" placeholder="Av.C Choquehuanca #1234" required disabled>
-                        </div>
-                        <button class="btn-pay" type="submit" disabled>Confirmar pago</button>
-                    </div>
+                    </form>
                     <div class="context">
                         <span>Verificas que esta información es correcta</span>
                     </div>
