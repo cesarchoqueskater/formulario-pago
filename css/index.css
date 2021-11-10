@@ -95,6 +95,10 @@ label {
     margin: 0;
 }
 
+.aria-selected {
+    cursor: pointer;
+}
+
 .input-text {
     margin-block-end: 24px;
 }
@@ -133,4 +137,14 @@ span {
     background-position: 269px 13px;
     background-repeat: no-repeat;
     padding-inline-end: 40px;
+}
+
+input[disabled] {
+    background-color: var(--grey2);
+    color: var(--grey);
+}
+
+button[disabled] {
+    opacity: 0.2;
+    color: var(--white);
 }

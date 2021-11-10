@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- <h1>Formulario de pagos</h1> -->
     <div class="content">
         <div class="wrapper">
             <div class="form-price">
@@ -26,25 +25,27 @@
                         <label for="name">Nombre Completo</label>
                         <input type="text" id="name" placeholder="César Choquehuanca">
                     </div>
-                    <div class="input-text">
-                        <label for="number-credit-card">Número de Tarjeta de Crédito</label>
-                        <input type="text" id="number-credit-card" placeholder="1234 1234 1234 1234">
-                    </div>
-                    <div class="data-credit">
+                    <div class="aria-selected" aria-disabled="true">
                         <div class="input-text">
-                            <label for="date-expired">Fecha vencimiento</label>
-                            <input type="text" id="date-expired" placeholder="MM/YY">
+                            <label for="number-credit-card">Número de Tarjeta de Crédito</label>
+                            <input type="text" id="number-credit-card" maxlength="19" placeholder="1234 1234 1234 1234" disabled>
+                        </div>
+                        <div class="data-credit">
+                            <div class="input-text">
+                                <label for="date-expired">Fecha vencimiento</label>
+                                <input type="text" id="date-expired" maxlength="5" placeholder="MM/YY" disabled>
+                            </div>
+                            <div class="input-text">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" maxlength="3" placeholder="..." disabled>
+                            </div>
                         </div>
                         <div class="input-text">
-                            <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" placeholder="...">
+                            <label for="direction">Dirección</label>
+                            <input type="text" id="direction" placeholder="Av. street #1234" disabled>
                         </div>
+                        <button class="btn-pay" type="submit" disabled>Confirmar pago</button>
                     </div>
-                    <div class="input-text">
-                        <label for="direction">Dirección</label>
-                        <input type="text" id="direction" placeholder="Av. street #1234">
-                    </div>
-                    <button class="btn-pay" type="submit">Confirmar pago</button>
                     <div class="context">
                         <span>Verificas que esta información es correcta</span>
                     </div>
@@ -52,6 +53,7 @@
             </div>
         </div>
     </div>
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
