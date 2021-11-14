@@ -1,4 +1,4 @@
-import { addDisabledInput, addDisabledButton, cleanInput, removeAttr } from './addRemoveComponents.js'
+import { addDisabledInput, addDisabledButton, cleanInput, removeAttr, cleanInputName } from './addRemoveComponents.js'
 
 const $name = document.querySelector('#name')
 const $creditCard = document.querySelector('#number-credit-card')
@@ -66,6 +66,7 @@ export default function clickButtonPay() {
             addDisabledButton()
             removeAttr()
             cleanInput()
+            cleanInputName()
             $htmlResult.innerHTML = '<p class="result-ok">Pago Correcto</p>'
             setTimeout(() => {
                 $htmlResult.innerHTML = ''

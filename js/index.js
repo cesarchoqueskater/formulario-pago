@@ -1,4 +1,4 @@
-import { removeDisabledInput, removeDisabledButton, addDisabledInput, addDisabledButton, cleanInput, removeAttr } from './addRemoveComponents.js'
+import { removeDisabledInput, removeDisabledButton, removeAttr } from './addRemoveComponents.js'
 import clickButtonPay from './confirmPay.js'
 
 const $creditCard = document.querySelector('#number-credit-card')
