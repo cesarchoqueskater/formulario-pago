@@ -43,29 +43,33 @@
                             <label for="name">Nombre Completo</label>
                             <input type="text" id="name" placeholder="César Choquehuanca" required>
                         </div>
-                        <div class="aria-selected" aria-disabled="true">
+                        <div class="aria-input-visibility" aria-selected="true">
                             <div class="input-text">
                                 <label for="number-credit-card">Número de Tarjeta de Crédito</label>
                                 <input type="text" id="number-credit-card" maxlength="19" placeholder="1234 1234 1234 1234" required disabled>
+                                <span class="resultNumberCreditCard"></span>
                             </div>
                             <div class="data-credit">
                                 <div class="input-text">
                                     <label for="date-expired">Fecha vencimiento</label>
                                     <input type="text" id="date-expired" maxlength="5" placeholder="MM/YY" required disabled>
+                                    <span class="resultDateExpired"></span>
                                 </div>
                                 <div class="input-text">
                                     <label for="cvv">CVV</label>
                                     <input type="text" id="cvv" maxlength="3" placeholder="..." required disabled>
+                                    <span class="resultCVV"></span>
                                 </div>
                             </div>
                             <div class="input-text">
                                 <label for="direction">Dirección</label>
                                 <input type="text" id="direction" placeholder="Av. C Choquehuanca #1234" required disabled>
                             </div>
-                            <button class="btn-pay" type="submit" disabled>Confirmar pago</button>
                         </div>
+                        <button class="btn-pay" type="submit" disabled>Confirmar pago</button>
                     </form>
                     <div class="context">
+                        <div class="resultPay"></div>
                         <span>Verificas que esta información es correcta</span>
                     </div>
                 </div>

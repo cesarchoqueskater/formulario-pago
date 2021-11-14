@@ -3,6 +3,7 @@
     --grey: #9ea8bd;
     --grey2: #e2e6ee;
     --primary: #ca097a;
+    --green: #098b09;
     --white: #ffffff;
     --background: #08003B;
     --text1regular: 400 1rem/normal Roboto;
@@ -99,12 +100,17 @@ label {
     margin: 0;
 }
 
-.aria-selected {
+.aria-input-visibility {
     cursor: pointer;
 }
 
 .input-text {
     margin-block-end: 24px;
+}
+
+.input-text span {
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .btn-pay {
@@ -121,6 +127,16 @@ label {
 .context {
     text-align: center;
     margin-block-start: 8px;
+}
+
+.result-ok {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.result-error {
+    color: var(--black);
+    font-weight: bold;
 }
 
 span {
